@@ -3,23 +3,23 @@ name: Hello world workflow
 on:
     push:
         branches:
-        -main
+        - main
         pull_request:
             branches:
-            -main
+            - main
            workflow_dispatch:
            
  jobs:
     hello:
     runs-on: windows-latest
     steps:
-        -uses: actions/checkout@v2
-        -name: hello world
+        - uses: actions/checkout@v2
+        - name: hello world
         run: echo "Hello world"
         shell: bash
    goodbye:
     runs-on: windows-latest
     steps:
-       -name: goodbye world
+       - name: goodbye world
        run: echo "Goodbye world"
        shell: bash
